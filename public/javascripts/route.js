@@ -67,6 +67,7 @@ function save(id, type, costtime) {
             if (json['res'] == 'success') {
                 document.querySelector('#result-save').classList.remove('btn-blue');
                 document.querySelector('#result-save').classList.add('btn');
+                document.querySelector('#result-save').innerHTML='Success';
                 document.querySelector('#result-save').removeAttribute("onclick");
             }
         });
